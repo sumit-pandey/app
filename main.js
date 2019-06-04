@@ -7,7 +7,7 @@ $(document).ready(function(){
             lat = position.coords.latitude;
             long = position.coords.longitude;
             
-            var proxy = 'http://cors-anywhere.herokuapp.com/';
+            var proxy = 'https://cors-anywhere.herokuapp.com/';
             var api = `${proxy}https://api.darksky.net/forecast/877b8bebdcfd5fff42ba415dccc01c0b/${lat},${long}`;
             fetch(api)
              .then(response => response.json())
